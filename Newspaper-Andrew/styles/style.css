@@ -1,0 +1,89 @@
+/* ###################### CLASS-SELECTORS ##################### */
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #2f2519;
+}
+
+body {
+  min-height: 100%; /* Allows content to scroll on background */
+  background-image: url("../assets/paper-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  color: #fff;
+  text-decoration: underline;
+}
+
+ul li {
+  list-style: none;
+}
+
+footer {
+  background-color: #2f2519;
+}
+
+/* ###################### CLASS-SELECTORS ##################### */
+
+a, .footer-copyright {
+  color: #fff;
+}
+
+.navbar-nav {
+  display: inline-block;
+}
+
+.navbar-nav>li {
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.drop-caps:first-letter {
+  font-size: 4em; /*Create drop-letter for first letter in the first paragraph of the article */
+  float: left;
+}
+
+.tab {
+  text-indent: 2em;
+}
+
+.cookie-banner {
+  position: fixed; /* Fixes cookie-banner to bottom of page, even while scrolling */
+  bottom: 0.5%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  background-color: #343A40;
+  color: #DFC69F;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Prevents cookie-banner from being overlayed by the footer */
+}
+
+.close {
+  height: 20px;
+  border: none;
+  color: #fff;
+  background-color: #DFC69F;
+  position: absolute;
+  right: 0.5em;
+  top: 0;
+}
+
+.close:hover {
+  color: #DFC69F;
+  transform: scale(1.2);
+}
