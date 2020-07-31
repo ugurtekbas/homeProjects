@@ -75,7 +75,7 @@ a:hover {
 .cookie-banner {
   position: fixed;
   /* Fixes cookie-banner to bottom of page, even while scrolling */
-  bottom: 0.5%;
+  bottom: 1%;
   left: 5%;
   right: 5%;
   width: 90%;
@@ -150,7 +150,7 @@ a[class^='show']:target {
 }
 
 .panel-2 {
-  max-height: 10em;
+  max-height: 11em;
 }
 
 div[class^='fade'] {
