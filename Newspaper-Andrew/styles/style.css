@@ -1,5 +1,4 @@
 /* ###################### CLASS-SELECTORS ##################### */
-
 html {
   height: 100%;
   margin: 0;
@@ -8,7 +7,8 @@ html {
 }
 
 body {
-  min-height: 100%; /* Allows content to scroll on background */
+  min-height: 100%;
+  /* Allows content to scroll on background */
   background-image: url("../assets/paper-background.jpg");
   background-position: center;
   background-size: cover;
@@ -17,6 +17,7 @@ body {
 
 h1 {
   text-align: center;
+  font-weight: bold;
 }
 
 h4 {
@@ -30,12 +31,21 @@ ul li {
 
 footer {
   background-color: #2f2519;
+  margin-top: 6%;
 }
 
 /* ###################### CLASS-SELECTORS ##################### */
-
 a, .footer-copyright {
   color: #fff;
+}
+
+.subheading {
+  font-size: 1.5em;
+}
+
+.text-link {
+  color: #343A40;
+  font-weight: bold;
 }
 
 .navbar-nav {
@@ -52,8 +62,10 @@ a:hover {
 }
 
 .drop-caps:first-letter {
-  font-size: 4em; /*Create drop-letter for first letter in the first paragraph of the article */
+  font-size: 4em;
+  /*Create drop-letter for first letter in the first paragraph of the article */
   float: left;
+  font-weight: bold;
 }
 
 .tab {
@@ -61,7 +73,8 @@ a:hover {
 }
 
 .cookie-banner {
-  position: fixed; /* Fixes cookie-banner to bottom of page, even while scrolling */
+  position: fixed;
+  /* Fixes cookie-banner to bottom of page, even while scrolling */
   bottom: 0.5%;
   left: 5%;
   right: 5%;
@@ -70,7 +83,8 @@ a:hover {
   color: #DFC69F;
   border-radius: 10px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-  z-index: 100; /* Prevents cookie-banner from being overlayed by the footer */
+  z-index: 100;
+  /* Prevents cookie-banner from being overlayed by the footer */
 }
 
 .close {
@@ -86,4 +100,62 @@ a:hover {
 .close:hover {
   color: #DFC69F;
   transform: scale(1.2);
+}
+
+
+/* ############## Read More Implementation ############### */
+.panel-wrapper {
+  position: relative;
+}
+
+.btn {
+  color: #343A40;
+  border-radius: 10px;
+  left: 30%;
+  text-decoration: none;
+}
+
+a[class^='show'], a[class^='hide'] {
+  position: absolute;
+  bottom: -3em;
+  z-index: 99;
+  font-weight: bold;
+}
+
+a[class^='hide'] {
+  display: none;
+}
+
+a[class^='show']:target {
+  display: none;
+}
+
+.show:target~.hide, .show-2:target~.hide-2, .show-3:target~.hide-3{
+  display: block;
+}
+
+.show:target~.panel, .show-2:target~.panel-2, .show-3:target~.panel-3 {
+  max-height: 2000px;
+}
+
+.show:target~.fade, .show-2:target~.fade-2, .show-3:target~.fade-3 {
+  margin-top: 0;
+}
+
+.panel, .panel-2, .panel-3{
+  position: relative;
+  max-height: 9.3em;
+  overflow: hidden;
+  transition: max-height .2s ease;
+}
+
+.panel-2 {
+  max-height: 10em;
+}
+
+div[class^='fade'] {
+  background: linear-gradient(to bottom, rgba($bg-color, 0) 0%, rgba($bg-color, 1) 75%);
+  height: 100px;
+  margin-top: -100px;
+  position: relative;
 }
