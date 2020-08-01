@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <title>The Daily Planet</title>
+
 </head>
 
 <body>
@@ -41,11 +42,10 @@
 
 
 
-
   <!-- First-Page: News -->
   <section id="first__page">
     <div class="container">
-      <h1>Breaking News: Amazing 'Read More'-Buttons discovered!</h1>
+      <h1>+++ Breaking News: Amazing 'Read More'-Buttons discovered! +++</h1>
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <div id="module" class="container">
@@ -101,7 +101,7 @@
     <div class="container">
 
 
-      <h1>This is a second page that uses a different Method for the 'Read more'-Button</h1>
+      <h1>This is a second page that uses a different method for the 'Read more'-Button</h1>
       <div class="col-md-6 col-lg-4">
         <span class="first__letter">A</span>nother botton. Not as nice. Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 
@@ -129,14 +129,75 @@
       <span id="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">&#10006;</span>
     </div>
 
-    <script>
+    <!-- <script>
       if (document.cookie.indexOf('hidecookiedingsbums=1') != -1) {
         jQuery('#cookiedingsbums').hide();
       } else {
         jQuery('#cookiedingsbums').prependTo('body');
         jQuery('#cookiedingsbumsCloser').show();
       }
-    </script>
+    </script> -->
+
+
+
+    <!-- <div class="container">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="notice d-flex justify-content-between align-items-center">
+            <div class="cookie-text">This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
+            <div class="buttons d-flex flex-column flex-lg-row">
+              <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">I accept</a>
+              <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- <div class="container">
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+</div>
+
+
+
+    <!-- <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="notice d-flex justify-content-between align-items-center">
+              <div class="cookie-text">This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
+              <div class="buttons d-flex flex-column flex-lg-row">
+                <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">I accept</a>
+                <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
 
 
   </footer>
