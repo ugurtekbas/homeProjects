@@ -16,6 +16,16 @@
   <!-- Page-Title   -->
   <title>The Daily Planet</title>
 
+  <!-- <script>
+    if (document.cookie.indexOf('hidecookiedingsbums=1') != -1) {
+      jQuery('#cookiedingsbums').hide();
+    } else {
+      jQuery('#cookiedingsbums').prependTo('body');
+      jQuery('#cookiedingsbumsCloser').show();
+    }
+  </script> -->
+
+
 </head>
 
 <body>
@@ -156,21 +166,18 @@
 
   <footer>
 
-    <!-- <div id="cookiedingsbums">
-      <div>
-        <span>Ja, auch diese Webseite verwendet Cookies. </span>
-        <a href="http://xxx.euredomain.de/euredatenschutzseite">Hier erfahrt ihr alles zum Datenschutz</a></div>
-      <span id="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">&#10006;</span>
-    </div> -->
+    <div id="cookiedingsbums">
+      <div class="cookie__popup" >
+        <span>We are using Cookies. </span>
+        <a href="http://xxx.euredomain.de/euredatenschutzseite">Find out more about Privacy</a></div>
+      <span id="cookiedingsbumsCloser" onclick="index.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">This Button does nothing -> <i class="fas fa-times"></i> </span>
+    </div>
 
-    <!-- <script>
-      if (document.cookie.indexOf('hidecookiedingsbums=1') != -1) {
-        jQuery('#cookiedingsbums').hide();
-      } else {
-        jQuery('#cookiedingsbums').prependTo('body');
-        jQuery('#cookiedingsbumsCloser').show();
-      }
-    </script> -->
+
+
+
+
+
 
 
 <!--
@@ -191,12 +198,6 @@
 
 
 
-
-
-
-
-
-
     <!-- <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
@@ -210,6 +211,21 @@
           </div>
         </div>
       </div> -->
+<!--
+      <div class="modal in fade" id="myModal">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">×</a>
+          <h3>Modal header</h3>
+        </div>
+        <div class="modal-body">
+          <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div> -->
+
 
 
 

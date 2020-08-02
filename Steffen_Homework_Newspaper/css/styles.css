@@ -11,6 +11,10 @@ h1 {
 }
 /* --------- */
 
+.cookie__popup {
+  text-align: center;
+
+}
 
 /* read more- Page one -------- */
 
@@ -18,7 +22,7 @@ HTML CSSResult EDIT ON #module {
   width: 500px;
 }
 
-#module #collapse__1.collapse:not(.show) 
+#module #collapse__1.collapse:not(.show)
 {
   display: block;
   height: 6rem;
@@ -85,18 +89,21 @@ Resources1×0.5×0.25×Rerun
 
 #cookiedingsbumsCloser {
   color: #777;
-  font: 14px/100% arial, sans-serif;
+  font: 10pt/100% arial, sans-serif;
   position: absolute;
   right: 5px;
   text-decoration: none;
   top: 5px;
   cursor:pointer;
-  border-top: 1px solid white;
+  /* border-top: 1px solid white;
   border-left: 1px solid white;
   border-bottom: 1px solid #7b92a9;
-  border-right: 1px solid #7b92a9;
+  border-right: 1px solid #7b92a9; */
   padding: 4px;
+}
 
+#cookiedingsbumsCloser i {
+  font-size: 20pt;
 }
 
 #cookiedingsbumsCloser:hover {
