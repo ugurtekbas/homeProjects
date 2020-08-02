@@ -18,7 +18,8 @@ HTML CSSResult EDIT ON #module {
   width: 500px;
 }
 
-#module #collapse__1.collapse:not(.show) {
+#module #collapse__1.collapse:not(.show) 
+{
   display: block;
   height: 6rem;
   overflow: hidden;
