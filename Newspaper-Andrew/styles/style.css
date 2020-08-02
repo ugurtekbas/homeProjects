@@ -3,7 +3,8 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #2f2519;
+  background-color: #343A40;
+  overflow-x: hidden;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -22,7 +24,7 @@ h1 {
 
 h4 {
   color: #fff;
-  text-decoration: underline;
+  font-style: italic;
 }
 
 ul li {
@@ -30,7 +32,7 @@ ul li {
 }
 
 footer {
-  background-color: #2f2519;
+  background-color: #343A40;
   margin-top: 6%;
 }
 
@@ -39,8 +41,48 @@ a, .footer-copyright {
   color: #fff;
 }
 
-.subheading {
+.privacy-link {
+  text-decoration: underline;
+}
+
+/* Header image including hover-text transition */
+.header-img {
+  border: 0 2px strong #343A40;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(52, 58, 64, 0.5);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: #FEFEFE;
   font-size: 1.5em;
+  font-weight: bold;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* End of Header with Transition Text */
+.subheading {
+  text-align: center;
+  font-size: 1.1em;
 }
 
 .text-link {
@@ -54,11 +96,14 @@ a, .footer-copyright {
 
 .navbar-nav>li {
   display: inline-block;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 a:hover {
   text-decoration: none;
   font-weight: bold;
+  color: #FEFEFE;
 }
 
 .drop-caps:first-letter {
@@ -73,35 +118,33 @@ a:hover {
 }
 
 .cookie-banner {
-  position: fixed;
   /* Fixes cookie-banner to bottom of page, even while scrolling */
+  position: fixed;
   bottom: 1%;
   left: 5%;
   right: 5%;
   width: 90%;
-  background-color: #343A40;
-  color: #DFC69F;
+  background-color: #BB3F0E;
+  color: #FEFEFE;
   border-radius: 10px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-  z-index: 100;
   /* Prevents cookie-banner from being overlayed by the footer */
+  z-index: 100;
 }
 
 .close {
   height: 20px;
   border: none;
-  color: #fff;
-  background-color: #DFC69F;
+  color: #FEFEFE;
   position: absolute;
   right: 0.5em;
   top: 0;
 }
 
-.close:hover {
+.close:hover, {
   color: #DFC69F;
   transform: scale(1.2);
 }
-
 
 /* ############## Read More Implementation ############### */
 .panel-wrapper {
@@ -113,6 +156,11 @@ a:hover {
   border-radius: 10px;
   left: 30%;
   text-decoration: none;
+}
+
+a[class^='show']:hover, a[class^='hide']:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
 }
 
 a[class^='show'], a[class^='hide'] {
@@ -130,7 +178,7 @@ a[class^='show']:target {
   display: none;
 }
 
-.show:target~.hide, .show-2:target~.hide-2, .show-3:target~.hide-3{
+.show:target~.hide, .show-2:target~.hide-2, .show-3:target~.hide-3 {
   display: block;
 }
 
@@ -142,9 +190,9 @@ a[class^='show']:target {
   margin-top: 0;
 }
 
-.panel, .panel-2, .panel-3{
+.panel, .panel-2, .panel-3 {
   position: relative;
-  max-height: 9.3em;
+  max-height: 10em;
   overflow: hidden;
   transition: max-height .2s ease;
 }
