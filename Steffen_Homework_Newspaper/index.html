@@ -15,17 +15,6 @@
 
   <!-- Page-Title   -->
   <title>The Daily Planet</title>
-
-  <!-- <script>
-    if (document.cookie.indexOf('hidecookiedingsbums=1') != -1) {
-      jQuery('#cookiedingsbums').hide();
-    } else {
-      jQuery('#cookiedingsbums').prependTo('body');
-      jQuery('#cookiedingsbumsCloser').show();
-    }
-  </script> -->
-
-
 </head>
 
 <body>
@@ -45,36 +34,39 @@
           <li class="nav-item">
             <a class="nav-link" href="#second__page"><i class="fas fa-archive"></i></i> Archive</a>
           </li>
-
         </ul>
       </div>
     </nav>
+
+    <!-- Title-Image -->
     <img style="margin-bottom: 40px;" src="assets/DailyPlanet.png" alt="DailyPlanet" width="100%">
+
   </section>
 
-
-
-  <!-- First-Page: News -->
+  <!-- First Section: News -->
   <section id="first__page">
     <div class="container">
       <h1>+++ Breaking News: Amazing 'Read More'-Buttons discovered! +++</h1>
+
       <!-- 1st row -->
       <div class="row">
         <div class="col-md-6 col-lg-4">
-          <div id="module" class="container">
-            <p class="collapse" id="collapse__1" aria-expanded="false">
+          <div class="container collapsed__column">
+            <p class="collapse" id="collapse__1">
               <span class="first__letter">T</span>
               his works. But i just copy/pasted code that i don´t really understand. Acon ipsum dolor amet doner picanha tri-tip biltong leberkas salami meatball tongue filet mignon landjaeger tail. Kielbasa salami tenderloin picanha spare ribs, beef
               ribs strip steak jerky cow. Pork chop chicken ham hock beef ribs turkey
               jerky. Shoulder beef capicola doner, tongue tail
             </p>
-            <a role="button" class="collapsed" data-toggle="collapse" href="#collapse__1" aria-expanded="false" aria-controls="collapse__1">
+            <a role="button" href="#collapse__1" data-toggle="collapse">
+              Read more
             </a>
           </div>
         </div>
+
         <!-- 2nd row -->
         <div class="col-md-6 col-lg-4">
-          <div id="module" class="container">
+          <div class="container collapsed__column">
             <p class="collapse" id="collapse__2" aria-expanded="false">
               <span class="first__letter">C</span>
               onsetetur sadipscing elitr .At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -92,12 +84,14 @@
             </p>
             </p>
             <a role="button" class="collapsed" data-toggle="collapse" href="#collapse__2" aria-expanded="false" aria-controls="collapse__2">
+              Read more
             </a>
           </div>
         </div>
+
         <!-- 3rd row -->
         <div class="col-md-6 col-lg-4">
-          <div id="module" class="container">
+          <div class="container collapsed__column">
             <p class="collapse" id="collapse__3" aria-expanded="false">
               <span class="first__letter">A</span>
               t vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -106,34 +100,20 @@
               voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
             <a role="button" class="collapsed" data-toggle="collapse" href="#collapse__3" aria-expanded="false" aria-controls="collapse__3">
+              Read more
             </a>
           </div>
-
         </div>
 
-
-
-
-
       </div>
-
     </div>
-
   </section>
 
-
+  <!-- Second Section -->
   <section id="second__page">
-
-    <div class="container-fluid justify-content-center">
-      <img style="width: 50%; opacity: 5%; position: fixed; bottom:50px; right: 0;" src="assets/DailyPlanet.png">
-
-    </div>
     <div class="container">
 
-
-
-
-      <h1 style="margin-top: 800px;">This is a second page that uses a different method for the 'Read more'-Button</h1>
+      <h1 style="margin-top: 800px;">This is a second section that uses a different method for the 'Read more'-Button. ...</h1>
 
       <div class="col-md-6 col-lg-4">
         <span class="first__letter">A</span>nother way of implementing the botton. Not as nice. Ipsum dolor sit amet,
@@ -152,7 +132,6 @@
             ribs strip steak jerky cow. Pork chop chicken ham hock beef ribs turkey
             jerky. Shoulder beef capicola doner, tongue tail
           </div>
-
         </div>
         <p>
           <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -163,72 +142,32 @@
     <div style="margin-bottom: 80%;"></div>
   </section>
 
-
-  <footer>
-
-    <div id="cookiedingsbums">
-      <div class="cookie__popup" >
-        <span>We are using Cookies. </span>
-        <a href="http://xxx.euredomain.de/euredatenschutzseite">Find out more about Privacy</a></div>
-      <span id="cookiedingsbumsCloser" onclick="index.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">This Button does nothing -> <i class="fas fa-times"></i> </span>
-    </div>
-
-
-
-
-
-
-
-
-<!--
-     <div class="container">
+  <!-- Cookie-Dialog -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="align-items: flex-end;">
       <div class="modal-content">
-        <div class="modal-body">
-          <div class="notice d-flex justify-content-between align-items-center">
-            <div class="cookie-text">This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
-            <div class="buttons d-flex flex-column flex-lg-row">
-              <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">I accept</a>
-              <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-
-
-
-
-    <!-- <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="notice d-flex justify-content-between align-items-center">
-              <div class="cookie-text">This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
-              <div class="buttons d-flex flex-column flex-lg-row">
-                <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">I accept</a>
-                <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-<!--
-      <div class="modal in fade" id="myModal">
         <div class="modal-header">
-          <a class="close" data-dismiss="modal">×</a>
-          <h3>Modal header</h3>
+          <h5 class="modal-title" id="exampleModalLabel">Cookie Warning!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <p>One fine body…</p>
+          This Site uses cookies <i class="fas fa-cookie-bite"></i>
         </div>
         <div class="modal-footer">
-          <a href="#" class="btn">Close</a>
-          <a href="#" class="btn btn-primary">Save changes</a>
+          <a class="btn btn-primary" href="cookie_info.html" role="button">Tell me more...</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-      </div> -->
+      </div>
+    </div>
+  </div>
 
-
-
-
+  <footer>
+    <!-- Watermark -->
+    <div class="container-fluid justify-content-center">
+      <img style="width: 50%; opacity: 5%; position: fixed; bottom:50px; right: 0;" src="assets/DailyPlanet.png">
+    </div>
   </footer>
 
   <!-- Optional JavaScript -->
@@ -236,6 +175,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Open Cookie-Popup on Startup -->
+  <script>
+    $(document).ready(function() {
+      $('#exampleModal').modal('show');
+    })
+  </script>
+
 </body>
 
 </html>
