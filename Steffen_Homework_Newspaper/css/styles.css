@@ -22,18 +22,31 @@ HTML CSSResult EDIT ON #module {
   width: 500px;
 }
 
-#module #collapse__1.collapse:not(.show)
+#module1 #collapse__1.collapse:not(.show) {
+  display: block;
+  height: 6rem;
+  overflow: hidden;
+}
+
+#module1 #collapse__1.collapsing {
+  height: 6rem;
+}
+
+#module2 #collapse__2.collapse:not(.show)
 {
   display: block;
   height: 6rem;
   overflow: hidden;
 }
 
-#module #collapse__1.collapsing {
+#module2 #collapse__2.collapsing
+{
   height: 6rem;
-}
+)
 
-#module #collapse__2.collapse:not(.show) {
+
+
+/* #module #collapse__2.collapse:not(.show) {
   display: block;
   height: 6rem;
   overflow: hidden;
@@ -51,7 +64,7 @@ HTML CSSResult EDIT ON #module {
 
 #module #collapse__3.collapsing {
   height: 6rem;
-}
+} */
 
 #module a.collapsed:after {
   content: '+ Read More';
