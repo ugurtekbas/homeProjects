@@ -20,11 +20,13 @@ body {
 h1 {
   text-align: center;
   font-weight: bold;
+  color: #BB3F0E;
 }
 
 h4 {
-  color: #fff;
+  color: #BB3F0E;
   font-style: italic;
+  font-weight: bold;
 }
 
 ul li {
@@ -33,7 +35,6 @@ ul li {
 
 footer {
   background-color: #343A40;
-  margin-top: 6%;
 }
 
 /* ###################### CLASS-SELECTORS ##################### */
@@ -43,6 +44,7 @@ a, .footer-copyright {
 
 .privacy-link {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 /* Header image including hover-text transition */
@@ -71,8 +73,8 @@ a, .footer-copyright {
   overflow: hidden;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* End of Header with Transition Text */
@@ -137,8 +139,8 @@ a:hover {
   top: 0;
 }
 
-.close:hover, {
-  color: #DFC69F;
+.close:hover {
+  color: #343A40;
   transform: scale(1.2);
 }
 
@@ -157,6 +159,7 @@ a:hover {
 a[class^='show']:hover, a[class^='hide']:hover {
   transform: scale(1.1);
   font-weight: bolder;
+  color: #BB3F0E;
 }
 
 a[class^='show'], a[class^='hide'] {
@@ -188,13 +191,13 @@ a[class^='show']:target {
 
 .panel, .panel-2, .panel-3 {
   position: relative;
-  max-height: 10em;
+  max-height: 10.5em;
   overflow: hidden;
   transition: max-height .2s ease;
 }
 
 .panel-2 {
-  max-height: 11em;
+  max-height: 11.3em;
 }
 
 div[class^='fade'] {
