@@ -10,7 +10,7 @@ html {
 body {
   min-height: 100%;
   /* Allows content to scroll on background */
-  background-image: url("../assets/paper-background.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/paper-background.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -19,13 +19,14 @@ body {
 
 h1 {
   text-align: center;
-  font-weight: bold;
-  color: #BB3F0E;
 }
 
 h4 {
-  color: #BB3F0E;
   font-style: italic;
+}
+
+h1, h2, h4 {
+  color: #BB3F0E;
   font-weight: bold;
 }
 
@@ -58,6 +59,10 @@ a, .footer-copyright {
   width: 0;
   height: 100%;
   transition: .5s ease;
+}
+
+.img-container {
+  border: 1px solid rgba(52, 58, 64, 0.5);
 }
 
 .img-container:hover .overlay {
@@ -109,6 +114,7 @@ a:hover {
   /*Create drop-letter for first letter in the first paragraph of the article */
   float: left;
   font-weight: bold;
+  color: #BB3F0E;
 }
 
 .tab {
