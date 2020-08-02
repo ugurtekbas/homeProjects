@@ -46,10 +46,6 @@ a, .footer-copyright {
 }
 
 /* Header image including hover-text transition */
-.header-img {
-  border: 0 2px strong #343A40;
-}
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -62,14 +58,14 @@ a, .footer-copyright {
   transition: .5s ease;
 }
 
-.container:hover .overlay {
+.img-container:hover .overlay {
   width: 100%;
 }
 
 .text {
   white-space: nowrap;
   color: #FEFEFE;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   position: absolute;
   overflow: hidden;
