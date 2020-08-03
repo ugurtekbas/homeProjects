@@ -19,13 +19,17 @@ body {
 
 h1 {
   text-align: center;
+  color: #BB3F0E;
+  font-weight: bold;
+}
+
+h2 {
+  color: #BB3F0E;
+  font-weight: bold;
 }
 
 h4 {
   font-style: italic;
-}
-
-h1, h2, h4 {
   color: #BB3F0E;
   font-weight: bold;
 }
@@ -36,6 +40,11 @@ ul li {
 
 footer {
   background-color: #343A40;
+}
+
+*::selection {
+  background-color: #BB3F0E;
+  color: #FEFEFE;
 }
 
 /* ###################### CLASS-SELECTORS ##################### */
@@ -54,7 +63,7 @@ a, .footer-copyright {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(52, 58, 64, 0.5);
+  background-color: rgba(52, 58, 64, 0.9);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -79,6 +88,9 @@ a, .footer-copyright {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -119,6 +131,7 @@ a:hover {
 
 .tab {
   text-indent: 2em;
+  margin-top: -1em
 }
 
 .cookie-banner {
@@ -150,6 +163,7 @@ a:hover {
   transform: scale(1.2);
 }
 
+
 /* ############## Read More Implementation ############### */
 .panel-wrapper {
   position: relative;
@@ -162,17 +176,17 @@ a:hover {
   text-decoration: none;
 }
 
-a[class^='show']:hover, a[class^='hide']:hover {
-  transform: scale(1.1);
-  font-weight: bolder;
-  color: #BB3F0E;
-}
-
 a[class^='show'], a[class^='hide'] {
   position: absolute;
   bottom: -3em;
   z-index: 99;
   font-weight: bold;
+}
+
+a[class^='show']:hover, a[class^='hide']:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+  color: #BB3F0E;
 }
 
 a[class^='hide'] {
