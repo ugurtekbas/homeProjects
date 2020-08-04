@@ -6,6 +6,24 @@
     <style>
         #more {display: none;}
     </style>
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
   </head>
 
   <body>
@@ -17,8 +35,8 @@
                 </h2>
               <p>
                   At the start of the school after the summer vacation on Thursday,
-                 <span id="dots1">...</span>
-                 <span id="more1">
+                 <span id="dots">...</span>
+                 <span id="more">
                   Hamburg's schoolchildren
                   and teachers in the buildings of secondary
                   schools should now wear mouth-nose protection - at least outside of class.
@@ -26,24 +44,7 @@
                   an interview with NDR 90.3.
                 </span>
               </p>
-              <button onclick="myFunction1()" id="myBtn1">Read more</button>
-              <script>
-              function myFunction1() {
-                var dots = document.getElementById("dots1");
-                var moreText = document.getElementById("more1");
-                var btnText = document.getElementById("myBtn1");
-
-                if (dots.style.display === "none") {
-                  dots.style.display = "inline";
-                  btnText.innerHTML = "Read more";
-                  moreText.style.display = "none";
-                } else {
-                  dots.style.display = "none";
-                  btnText.innerHTML = "Read less";
-                  moreText.style.display = "inline";
-                }
-              }
-              </script>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
           </div>
 
           <div class ="col-md-4 ml-auto">
@@ -51,8 +52,8 @@
                 </h2>
               <p>
                   Only when the students sit down in the classrooms at their place
-                   of work or <span id="dots2">...</span>
-                   <span id="more2">
+                   of work or <span id="dots">...</span>
+                   <span id="more">
                    when teachers sit at their place of work does the mask
                    requirement cease to apply. "But on the paths, in the school corridors,
                    in the breaks, the masks are to be worn without exception," said Rabe.
@@ -61,24 +62,7 @@
                    In addition, they could not yet handle the masks properly.
                    </span>
                 </p>
-                <button onclick="myFunction2()" id="myBtn2">Read more</button>
-                <script>
-                function myFunction2() {
-                  var dots = document.getElementById("dots2");
-                  var moreText = document.getElementById("more2");
-                  var btnText = document.getElementById("myBtn2");
-
-                  if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more";
-                    moreText.style.display = "none";
-                  } else {
-                    dots2.style.display = "none";
-                    btnText2.innerHTML = "Read less";
-                    moreText2.style.display = "inline";
-                  }
-                }
-                </script>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
           </div>
 
           <div class ="col-md-4 ml-auto">
@@ -86,30 +70,13 @@
                 </h2>
               <p>
                 "We coordinated with leading associations, virologists and experts
-                <span id="dots3">...</span>
-                <span id="more3"> over the weekend, who have now come to the conclusion that a mask
+                <span id="dots">...</span>
+                <span id="more"> over the weekend, who have now come to the conclusion that a mask
                 requirement makes sense," said Rabe. "That's why Hamburg will introduce
                 such a mask requirement - for everyone who is at school."
                 </span>
               </p>
-              <button onclick="myFunction3()" id="myBtn3">Read more</button>
-              <script>
-                function myFunction3() {
-                  var dots = document.getElementById("dots3");
-                  var moreText = document.getElementById("more3");
-                  var btnText = document.getElementById("myBtn3");
-
-                  if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more";
-                    moreText.style.display = "none";
-                  } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read less";
-                    moreText.style.display = "inline";
-                  }
-                }
-              </script>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
           </div>
         </div>
       </div>
@@ -120,7 +87,7 @@
   </SCRIPT>
   <BODY onLoad="popup('creeper.jpg', 'ad')">-->
 
-<div class="cookie-consent-banner">
+<div class="cookie-consent-banner" >
   <div class="cookie-consent-banner__inner">
     <div class="cookie-consent-banner__copy">
       <div class="cookie-consent-banner__header">THIS WEBSITE USES COOKIES
