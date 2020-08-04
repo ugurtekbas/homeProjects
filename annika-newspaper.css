@@ -15,7 +15,7 @@ h2 {
     font-weight: bold;
 }
 
-.col-general p:first-letter {
+.col-general p:first-child, p:first-letter {
     font-size: 3rem;
     padding: 0.5rem 0.5rem 0.2rem 0;
     float: left;
