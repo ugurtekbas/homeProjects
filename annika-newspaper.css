@@ -5,8 +5,8 @@ body {
     background-repeat: none;
 }
 
-.container {
-    margin-top: 3%;
+.row {
+    margin-top: 5%;
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
     font-weight: bold;
 }
 
-p:first-letter {
+.col-general p:first-letter {
     font-size: 3rem;
     padding: 0.5rem 0.5rem 0.2rem 0;
     float: left;
@@ -27,5 +27,40 @@ p:first-letter {
 }
 
 .read-more-btn:hover {
-    background-color: rgba(247, 230, 207, 0.5);
+    background-color: rgba(253, 230, 197, 0.5);
+}
+
+/*My weird cookie banner*/
+
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    right: 30%;
+    left: 30%;
+    padding: 3rem;
+    text-align: center;
+    margin: 5% 0 0 0;
+    color: rgb(240, 224, 204);
+    background: black;
+}
+
+.cookie-popup a {
+    text-decoration: none;
+    color: rgba(253, 230, 197, 1);
+}
+
+.cookie-popup button {
+    background: rgba(253, 230, 197, 1);
+    border-style: none;
+    padding: 0.2rem;
+}
+
+#privacy-link {
+    color: black;
+}
+
+#close-x {
+    position: absolute;
+    bottom: 80%;
+    left: 95%;
 }
