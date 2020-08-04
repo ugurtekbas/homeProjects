@@ -42,8 +42,8 @@ h2 {
 .cookie-popup {
     position: fixed;
     bottom: 0;
-    right: 30%;
-    left: 30%;
+    right: 15%;
+    left: 15%;
     padding: 3rem;
     text-align: center;
     margin: 5% 0 0 0;
