@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("https://c.pxhere.com/images/0c/2f/fae05cc5fff7d36ba1aa6690b0fc-1430893.jpg!d");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.container {
+    margin-top: 3%;
+    height: 10%;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+}
+
+p:first-letter {
+    font-size: 3rem;
+    padding: 0.5rem 0.5rem 0.2rem 0;
+    float: left;
+}
+
+.read-more-btn {
+    background-color: rgba(179, 151, 114, 0.3);
+    border-style: none;
+}
+
+.read-more-btn:hover {
+    background-color: rgba(247, 230, 207, 0.5);
+}
