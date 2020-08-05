@@ -6,40 +6,76 @@ html {
 }
 
 body {
-  min-height: 100%;
-  /* Allows content to scroll on background */
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Merriweather', serif;
   background-color: #0f0e17;
+  text-align: center;
 }
 
 h1 {
   text-align: center;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
 }
 
-.gradient {
+form {
+  display: inline-block;
+}
+
+.gradient { /* For HR seperator */
   background: linear-gradient(to right, rgba(255, 137, 1, 1) 0%, rgba(204, 43, 102, 1) 100%);
+  border: none;
   height: 3px;
   position: relative;
   max-width: 90%;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
+
+/* ##################### Form Inputs Styling ###################### */
 input[type=submit] {
   background: linear-gradient(163deg, rgba(231, 51, 111, 1) 0%, rgba(254, 135, 14, 1) 100%);
   color: white;
   font-weight: bold;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
+  margin-left: 0.5em;
+  font-family: 'BioRhyme', serif;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 input[type=email] {
   background-color: white;
-  padding: 1em 3em 1em 1.5em;
+  padding: 1em 6em 1em 1em;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
+  font-family: 'Inconsolata', monospace;
+  width: auto;
+}
+
+
+/* ##################### Placeholder Styling ###################### */
+::-webkit-input-placeholder {
+  overflow: visible;
+}
+
+::-moz-placeholder {
+  overflow: visible;
+}
+:-ms-input-placeholder {
+  overflow: visible;
+}
+:-moz-placeholder {
+  overflow: visible;
 }
