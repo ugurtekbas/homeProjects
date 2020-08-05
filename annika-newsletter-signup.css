@@ -5,17 +5,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.top-line {
-    height: 8px;
-    width: 100%;
-    background-image: linear-gradient(90deg, rgb(231, 177, 61), rgb(238, 34, 160));
-    border-radius: 0.5rem;
-}
-
 .container {
     width: 90%;
     margin: 5% 0 0 5%;
-    /*another approach I tried - works fine, except border-image does not allow for rounded corners*/
+    
+    /*another approach I tried for gradient line.
+    it works fine, except border-image does not allow for rounded corners*/
     /*
     border-top: 8px solid;
     border-image-source: linear-gradient(90deg, rgb(231, 177, 61), rgb(238, 34, 160));
@@ -23,56 +18,84 @@ body {
     */
 }
 
+.top-line {
+    height: 6px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(240, 130, 25), rgb(238, 34, 160));
+    border-radius: 0.5rem;
+}
+
 /*entire text*/
 
 .text-content {
-    width: 50%;
-    margin: 6% 0 0 25%;
+    width: 60%;
+    margin: 6% 0 0 20%;
     text-align: center;
+    border: 2px solid orange;
 }
 
-/*icon and title*/
+/*header and form flex*/
 
-
-.header {
+.header, form {
     display: flex;
-    vertical-align: middle;
     align-items: center;
-    margin: 0 0 0 25%;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0.5rem;
 }
 
+/*header elements*/
 
 img {
     width: 2.5rem;
     height: 2.5rem;
-    margin: 0 1% 0 0;
+    margin: 0 0 0 32%;
+}
+
+h1 {
+    width: 55%;
+    margin: 0 0 0 -10%;
 }
 
 /*form elements*/
+
+form {
+    border: 2px solid pink;
+}
 
 form input {
     border-style: none;
     border-radius: 0.5rem;
     width: 40%;
     height: 32%;
-    padding: 1.2rem;
+    padding: 1.1rem;
     color: gray;
     font-family: courier;
     font-size: 1rem;
+    margin: 0 0 0 19.5%;
 }
 
 form button {
-    background-image: linear-gradient(160deg, rgb(238, 34, 160), rgb(231, 177, 61));
+    background-image: linear-gradient(160deg, rgb(238, 34, 160), rgb(240, 130, 25));
     background-size: cover;
     border-style: none;
     border-radius: 0.5rem;
     width: 20%;
     height: 30%;
-    padding: 1rem;
+    padding: 0.9rem;
     color: white;
     font-family: Cambria;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
-    margin: 0 0 0 0.8%;
+    margin: 0 0 0 1%;
 }
+
+@media only screen and (max-width: 600px) {
+    input {
+        width: 60%;
+    }
+    button {
+      width: 40%;
+    }
+  }
