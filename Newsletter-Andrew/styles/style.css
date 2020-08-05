@@ -32,6 +32,12 @@ form {
   margin-bottom: 3em;
 }
 
+.large {
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+}
+
 
 /* ##################### Form Inputs Styling ###################### */
 input[type=submit] {
