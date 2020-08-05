@@ -85,3 +85,18 @@ input[type=email] {
 :-moz-placeholder {
   overflow: visible;
 }
+
+/* ###################### Animations ################# */
+#flag {
+  animation: flag 2.5s ease;
+  transform-origin: center;
+}
+
+@keyframes flag {
+  from{
+    transform: rotateZ(90deg);
+  }
+  to{
+    transform: rotateZ(0deg);
+  }
+}
