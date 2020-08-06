@@ -22,7 +22,8 @@ form {
   display: inline-block;
 }
 
-.gradient { /* For HR seperator */
+.gradient {
+  /* For HR seperator */
   background: linear-gradient(to right, rgba(255, 137, 1, 1) 0%, rgba(204, 43, 102, 1) 100%);
   border: none;
   height: 3px;
@@ -37,7 +38,6 @@ form {
   font-size: 1.3em;
   font-family: 'Roboto', sans-serif;
 }
-
 
 /* ##################### Form Inputs Styling ###################### */
 input[type=submit] {
@@ -70,7 +70,6 @@ input[type=email] {
   width: auto;
 }
 
-
 /* ##################### Placeholder Styling ###################### */
 ::-webkit-input-placeholder {
   overflow: visible;
@@ -79,24 +78,79 @@ input[type=email] {
 ::-moz-placeholder {
   overflow: visible;
 }
+
 :-ms-input-placeholder {
   overflow: visible;
 }
+
 :-moz-placeholder {
   overflow: visible;
 }
 
 /* ###################### Animations ################# */
+#mailbox_with_flag {
+  animation: shake 0.5s;
+  animation-delay: 0.5s;
+}
+
 #flag {
-  animation: flag 2.5s ease;
+  transform: rotateZ(90deg);
+  animation: flag 2s linear 1.2s 1 normal forwards;
   transform-origin: center;
 }
 
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 @keyframes flag {
-  from{
+  from {
     transform: rotateZ(90deg);
   }
-  to{
+
+  to {
     transform: rotateZ(0deg);
   }
 }
