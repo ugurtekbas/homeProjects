@@ -95,8 +95,22 @@ input[type=email] {
 
 #flag {
   transform: rotateZ(90deg);
-  animation: flag 2s linear 1.2s 1 normal forwards;
+  animation: flag 1s linear 1.2s 1 normal forwards;
   transform-origin: center;
+}
+
+.large-animate-appear {
+  animation-duration: 7s;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+.large-animate {
+  animation-duration: 3.5s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
 }
 
 @keyframes shake {
@@ -152,5 +166,27 @@ input[type=email] {
 
   to {
     transform: rotateZ(0deg);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%
+  }
+
+  to {
+    opacity: 100%
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
