@@ -1,0 +1,31 @@
+body {
+    background: black;
+    color: rgba(226, 225, 211, 0.9);
+    font-family: Wox;
+    font-size: 12rem;
+    text-shadow: 0 0 45px rgba(190, 190, 164);
+    animation: font-glow 5s infinite;
+}
+
+@font-face {
+    font-family: "Wox";
+    src:url("Wox.otf") format("opentype");
+  }
+
+.error {
+    color: white;
+    width: 25%;
+    margin: 5% 0 0 37.5%;
+}
+
+  #red {
+    color: red;
+    width: 25%;
+    margin: -3% 0 0 37.5%;
+}
+
+/*animation*/
+
+@keyframes font-glow {
+
+}
