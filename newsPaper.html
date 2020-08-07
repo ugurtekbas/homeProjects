@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link rel ="stylesheet" href ="cookies.css">
+    <link rel ="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #more {display: none;}
+    </style>
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    <div class = "jumbotron">
+      <div class ="container">
+        <div class ="row justify-content-center">
+          <div class ="col-md-4 ml-auto">
+                <h2> School start in Hamburg: mask requirement during breaks
+                </h2>
+              <p>
+                  At the start of the school after the summer vacation on Thursday,
+                 <span id="dots">...</span>
+                 <span id="more">
+                  Hamburg's schoolchildren
+                  and teachers in the buildings of secondary
+                  schools should now wear mouth-nose protection - at least outside of class.
+                  Hamburg's school senator Ties Rabe (SPD) said this on Monday morning in
+                  an interview with NDR 90.3.
+                </span>
+              </p>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+
+          <div class ="col-md-4 ml-auto">
+                <h2>Mask only when sitting down
+                </h2>
+              <p>
+                  Only when the students sit down in the classrooms at their place
+                   of work or <span id="dots">...</span>
+                   <span id="more">
+                   when teachers sit at their place of work does the mask
+                   requirement cease to apply. "But on the paths, in the school corridors,
+                   in the breaks, the masks are to be worn without exception," said Rabe.
+                   However, this does not apply to elementary school students up to ten
+                   years of age. The risk of infection is significantly lower for them.
+                   In addition, they could not yet handle the masks properly.
+                   </span>
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+
+          <div class ="col-md-4 ml-auto">
+                <h2>Talks on the weekend
+                </h2>
+              <p>
+                "We coordinated with leading associations, virologists and experts
+                <span id="dots">...</span>
+                <span id="more"> over the weekend, who have now come to the conclusion that a mask
+                requirement makes sense," said Rabe. "That's why Hamburg will introduce
+                such a mask requirement - for everyone who is at school."
+                </span>
+              </p>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="cookie-consent-banner" >
+  <div class="cookie-consent-banner__inner">
+    <div class="cookie-consent-banner__copy">
+      <div class="cookie-consent-banner__header">THIS WEBSITE USES COOKIES
+      </div>
+      <div class="cookie-consent-banner__description">We use cookies to personalise
+         content and ads, to provide social media features and to analyse our traffic.
+         We also share information about your use of our site with our social media,
+         advertising and analytics partners who may combine it with other information
+         that you’ve provided to them or that they’ve collected from your use of their
+         services. You consent to our cookies if you continue to use our website.
+       </div>
+    </div>
+
+    <div class="cookie-consent-banner__actions">
+      <a href="#" class="cookie-consent-banner__cta">
+        OK
+      </a>
+      <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary">
+        Decline
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
