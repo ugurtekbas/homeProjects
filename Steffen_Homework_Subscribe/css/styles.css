@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  background: linear-gradient(to right, #FE8905, #E73070);
+  height: 5px;
+  margin-top: 2rem;
+}
+
+h1 {
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.email__input {
+  font-family: monospace;
+  margin-right: 10px;
+  width: 280px ;
+  font-size: 12pt;
+  height: 40px;
+}
+
+.button__gradient {
+    background-image: linear-gradient(to bottom right, #E73070, #FD8219);
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-inline {
+  margin: 20px;
+}
