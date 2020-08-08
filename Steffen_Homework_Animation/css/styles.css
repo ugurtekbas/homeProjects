@@ -1,0 +1,64 @@
+body {
+  background-color: #222;
+  color: white;
+}
+
+div {
+  font-family: 'Monoton', cursive;
+  font-size: 100pt;
+  text-align: center;
+  line-height: 0.1;
+  margin-top: 20rem;
+}
+
+/* RED ---------------------------------------------*/
+.letter_red_on {
+  color: #F71B12;
+  text-shadow: 0 0 20px #828282;
+}
+
+.letter_red_off {
+  color: #5C1F19;
+}
+
+.letter_red_flicker {
+  animation-name: anim_flicker_red;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1  , start);
+}
+
+@keyframes anim_flicker_red {
+  0% {color: #5C1F19; text-shadow: none;}
+  10% {color: #F71B12;    text-shadow: 0 0 20px #828282;}
+  20% {color: #5C1F19; text-shadow: none;}
+  40% {color: #F71B12;    text-shadow: 0 0 20px #828282;}
+  47% {color: #5C1F19; text-shadow: none;}
+  48% {color: #F71B12;    text-shadow: 0 0 20px #828282;}
+  50% {color: #5C1F19; text-shadow: none;}
+  52% {color: #F71B12;    text-shadow: 0 0 20px #828282;}
+  53% {color: #5C1F19; text-shadow: none;}
+  100% {color: #F71B12;    text-shadow: 0 0 20px #828282;}
+}
+
+/* WHITE ---------------------------------------------*/
+
+.letter_white_on {
+  text-shadow: 0 0 40px #ffffff;
+}
+
+.letter_white_flicker {
+  animation-iteration-count: infinite;
+  animation-name: anim_flicker_white;
+  animation-duration: 10s;
+  animation-timing-function: steps(1  , start);
+}
+
+@keyframes anim_flicker_white {
+  0% {color: #868882; text-shadow: none;}
+  20% {color: white; text-shadow: 0 0 40px #ffffff;}
+  22% {color: #868882; text-shadow: none;}
+  51% {color: white; text-shadow: 0 0 40px #ffffff;}
+  55% {color: #868882; text-shadow: none;}
+  100% {color: white; text-shadow: 0 0 40px #ffffff;}
+}
