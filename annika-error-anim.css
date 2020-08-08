@@ -1,10 +1,9 @@
 body {
     background: black;
-    color: rgba(226, 225, 211, 0.9);
     font-family: Wox;
-    font-size: 12rem;
-    text-shadow: 0 0 45px rgba(190, 190, 164);
-    animation: font-glow 5s infinite;
+    font-weight: 500;
+    font-size: 14rem;
+    text-shadow: 0 0 60px rgb(253, 240, 195);
 }
 
 @font-face {
@@ -14,18 +13,100 @@ body {
 
 .error {
     color: white;
-    width: 25%;
-    margin: 5% 0 0 37.5%;
+    text-shadow: var(--white-glow);
+    width: 40%;
+    margin: 5% 0 0 35%;
 }
 
+/*having a spacing issue here.*/
+/*if #red is 60% width of parent (that is, 60% of error div),*/
+/*it should be exactly 20% margin left and right each. But if i set that value the 404 is not centred.*/
+
   #red {
-    color: red;
-    width: 25%;
-    margin: -3% 0 0 37.5%;
+    color: var(--red-on);
+    text-shadow: var(--red-glow);
+    width: 60%;
+    margin: -15% 0 0 12%;
+}
+
+#zero {
+  color: var(--red-off);
+  text-shadow: none; 
 }
 
 /*animation*/
 
-@keyframes font-glow {
+:root {
+  --white-off: rgba(255, 255, 255, 0.3);
+  --white-on: rgba(255, 255, 255, 1);
+  --white-glow: 0 0 2px rgba(81, 142, 228, 0.9), 0 0 10px rgba(183, 213, 255, 0.9), 0 0 5rem rgba(255, 247, 219, 0.5);
+  --red-off: rgba(255, 0, 0, 0.3);
+  --red-on: rgba(255, 0, 0, 1); 
+  --red-glow: 0 0 6px rgba(245, 52, 52, 0.9), 0 0 5rem rgba(255, 247, 219, 0.5); 
+}
 
+#r {
+  animation: r-glow 16s infinite;
+}
+
+@keyframes r-glow {
+  0%      {color: var(--white-on); text-shadow: var(--white-glow);}
+  3.12%   {color: var(--white-off); text-shadow: none;}
+  3.13%   {color: var(--white-on); text-shadow: var(--white-glow);}
+  37.4%   {color: var(--white-on); text-shadow: var(--white-glow);}
+  37.5%   {color: var(--white-off); text-shadow: none;}
+  40.62%  {color: var(--white-off); text-shadow: none;}
+  40.63%  {color: var(--white-on); text-shadow: var(--white-glow);}
+  65.62%  {color: var(--white-on); text-shadow: var(--white-glow);}
+  65.63%  {color: var(--white-off); text-shadow: none;}
+  67.9%   {color: var(--white-off); text-shadow: none;}
+  68%     {color: var(--white-on); text-shadow: var(--white-glow);}
+  68.4%     {color: var(--white-on); text-shadow: var(--white-glow);}
+  68.5%   {color: var(--white-off); text-shadow: none;}
+  71.87%  {color: var(--white-off); text-shadow: none;}
+  71.88%  {color: var(--white-on); text-shadow: var(--white-glow);}
+}
+
+#four {
+  animation: four-glow 16s infinite;
+}
+
+@keyframes four-glow {
+  6.25%   {color: var(--red-off); text-shadow: none;}
+  12.2%   {color: var(--red-off); text-shadow: none;}
+  12.5%   {color: var(--red-on); text-shadow: var(--red-glow)}
+  18.7%   {color: var(--red-on);text-shadow: var(--red-glow)}
+  18.75%  {color: var(--red-off); text-shadow: none;}
+  21.86%  {color: var(--red-off); text-shadow: none;}
+  21.88%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  28.11%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  28.13%  {color: var(--red-off); text-shadow: none;}
+  30.62%  {color: var(--red-off); text-shadow: none;}
+  30.63%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  40.61%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  40.63%  {color: var(--red-off); text-shadow: none;}
+  43.11%  {color: var(--red-off); text-shadow: none;}
+  43.13%  {color: var(--red-on); text-shadow: var(--red-glow);}
+  53.11%  {color: var(--red-on); text-shadow: var(--red-glow);}
+  53.13%  {color: var(--red-off); text-shadow: none;}
+  56.22%  {color: var(--red-off); text-shadow: none;}
+  56.25%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  68.73%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  68.75%  {color: var(--red-off); text-shadow: none;}
+  74.95%  {color: var(--red-off); text-shadow: none;}
+  75.00%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  81.22%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  81.25%  {color: var(--red-off); text-shadow: none;}
+  84.35%  {color: var(--red-off); text-shadow: none;}
+  84.38%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  88.71%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  88.75%  {color: var(--red-off); text-shadow: none;}
+  91.22%  {color: var(--red-off); text-shadow: none;}
+  91.25%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  92.48%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  92.50%  {color: var(--red-off); text-shadow: none;}
+  93.11%  {color: var(--red-off); text-shadow: none;}
+  93.13%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  96.86%  {color: var(--red-on);text-shadow: var(--red-glow)}
+  96.88%  {color: var(--red-off); text-shadow: none;}
 }
