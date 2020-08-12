@@ -1,0 +1,43 @@
+.first__letter {
+  font-family: serif;
+  line-height: 70px;
+  font-size: 60pt;
+}
+
+h1 {
+  font-size: 20pt;
+  font-style: italic;
+  font-family: serif;
+}
+
+/* This is for the Read-More-Buttons */
+
+.collapsed__column #collapse__1.collapse:not(.show) {
+  display: block;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.collapsed__column #collapse__1.collapsing {
+  height: 6rem;
+}
+
+.collapsed__column #collapse__2.collapse:not(.show) {
+  display: block;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.collapsed__column #collapse__2.collapsing {
+  height: 6rem;
+}
+
+.collapsed__column #collapse__3.collapse:not(.show) {
+  display: block;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.collapsed__column #collapse__3.collapsing {
+  height: 6rem;
+}

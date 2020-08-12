@@ -1,0 +1,138 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- some bootstrap for responsive design -->
+<style>
+  p:first-letter {
+    font-size: 3em;
+    float: left;
+    padding: 0 .25em;
+  }
+
+  #spanCol1 {
+    display: none;
+  }
+
+  #spanCol2 {
+    display: none;
+  }
+
+  #spanCol3 {
+    display: none;
+  }
+
+  p {
+    text-align: justify;
+    border-right: 1px solid grey;
+    padding: 10px;
+  }
+  button {
+    border: none;
+    background: white;
+    color: darkgrey;
+
+  }
+
+</style>
+
+<script>
+<!-- variables to change status of span-elements -->
+var wholeText1 = "false";
+var wholeText2 = "false";
+var wholeText3 = "false";
+
+
+<!-- the functions are activated via onclick-event, the span-element is getting displayed -->
+<!-- and the var "wholeText" gets true as whole text is displayed, also changes button-text to "fold up"-->
+
+function readMore1() {
+  if (wholeText1 == "false"){
+    document.getElementById("spanCol1").style.display ="block";
+    wholeText1 = "true";
+    document.getElementById("button1").textContent = "Fold up";
+  }
+
+
+<!-- if "wholeText is true sets everything back to default" -->
+
+  else{
+    document.getElementById("spanCol1").style.display ="none";
+    wholeText1 = "false";
+    document.getElementById("button1").textContent = "Read more";
+  }
+}
+
+function readMore2() {
+  if (wholeText2 == "false"){
+    document.getElementById("spanCol2").style.display ="block";
+    wholeText2 = "true";
+    document.getElementById("button2").textContent = "Fold up";
+  }
+
+  else{
+    document.getElementById("spanCol2").style.display ="none";
+    wholeText2 = "false";
+    document.getElementById("button2").textContent = "Read more";
+  }
+}
+
+function readMore3() {
+  if (wholeText3 == "false"){
+    document.getElementById("spanCol3").style.display ="block";
+    wholeText3 = "true";
+    document.getElementById("button3").textContent = "Fold up";
+  }
+
+  else{
+    document.getElementById("spanCol3").style.display ="none";
+    wholeText3 = "false";
+    document.getElementById("button3").textContent = "Read more";
+  }
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <p>
+                HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as "img /" and "input /" directly introduce content into the page.
+              <span id="spanCol1">
+                    Other tags such as "p" surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+              </span>
+              <br>
+              <button id="button1" onclick="readMore1()">Read more</button> <!-- there is the onclick event assigned to the button -->
+            </p>
+            </div>
+
+          <div class="col-md-4 col-sm-12">
+                <p>
+                  CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file
+                    <span id="spanCol2">
+                      to be cached to improve the page load speed between the pages that share the file and its formatting.
+                    </span><br>
+                    <button id="button2" onclick="readMore2()">Read more</button>
+                  </p>
+                </div>
+
+           <div class="col-md-4 col-sm-12">
+             <p>
+                  JavaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                 <span id="spanCol3">
+                      Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
+                 </span>
+                 <br>
+                <button id="button3" onclick="readMore3()">Read more</button>
+             </p>
+           </div>
+
+       </div>
+
+   </div>
+</body>
+</html>

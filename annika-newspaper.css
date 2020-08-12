@@ -1,0 +1,71 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("https://c.pxhere.com/images/0c/2f/fae05cc5fff7d36ba1aa6690b0fc-1430893.jpg!d");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.row {
+    margin-top: 5%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+}
+
+.col-general p:first-child, p:first-letter {
+    font-size: 3rem;
+    padding: 0.5rem 0.5rem 0.2rem 0;
+    float: left;
+}
+
+.collapse div {
+    margin: -5% 0 0 0;
+}
+
+.read-more-btn {
+    background-color: rgba(179, 151, 114, 0.3);
+    border-style: none;
+    margin: 3% 0 0 0;
+}
+
+.read-more-btn:hover, .read-more-btn:active {
+    background-color: rgba(253, 230, 197, 0.5);
+    border-style: none;
+    box-shadow: none;
+}
+
+/*My weird cookie banner*/
+
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    right: 15%;
+    left: 15%;
+    padding: 3rem;
+    text-align: center;
+    margin: 5% 0 0 0;
+    color: rgb(240, 224, 204);
+    background: black;
+}
+
+.cookie-popup a {
+    text-decoration: none;
+    color: rgba(253, 230, 197, 1);
+}
+
+.cookie-popup button {
+    background: transparent;
+    border-style: none;
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#close-x {
+    position: absolute;
+    bottom: 80%;
+    left: 95%;
+}

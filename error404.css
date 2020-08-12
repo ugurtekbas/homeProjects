@@ -1,0 +1,69 @@
+body{
+  background-color: black;
+}
+
+@font-face {
+  font-family: Monoton;
+  src: url(fonts/Monoton-Regular.ttf);
+}
+
+* {
+  color:white;
+  text-align: center;
+  font-family: Monoton;
+  font-size: 3rem;
+}
+
+.r{
+  animation: fontGlow 10s infinite;
+  animation-timing-function: steps(1,start);
+  animation-delay: 5s;
+
+}
+
+@keyframes fontGlow {
+  0% {color: white;}
+  29% {color: white;}
+  30% {color: #747072;}
+  31% {color: white;}
+  55% {color: white;}
+  60% {color: #747072;}
+  65% {color: white;}
+}
+
+.divSmall{
+  color: #FA241D;
+}
+
+.zero{
+  color: #751B19;
+}
+
+.four{
+  color: #FA241D;
+  animation: fourGlow 15s infinite;
+  animation-timing-function: steps(1,end)/*cubic-bezier(0.3, 5, 1, 0)*/;
+  animation-delay: 2s;
+
+}
+
+@keyframes fourGlow {
+  0% {color: #FA241D;}
+  10% {color: #751B19;}
+  11% {color: #FA241D;}
+  15% {color: #751B19;}
+  16% {color: #FA241D;}
+  15% {color: #751B19;}
+  20% {color: #FA241D;}
+  21% {color: #751B19;}
+  30% {color: #751B19;}
+  31% {color: #FA241D;}
+  45% {color: #751B19;}
+  46% {color: #FA241D;}
+  50% {color: #751B19;}
+  51% {color: #FA241D;}
+  65% {color: #751B19;}
+  66% {color: #FA241D;}
+  80% {color: #751B19;}
+  81% {color: #FA241D;}
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Newspaper Homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="annika-newspaper.css" type="text/css">
+</head>
+<body>
+    <!--Questions: having trouble including first-child selector to paragraphs to limit drop caps effect-->
+    <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+            <div class="col-general col-sm-12 col-md-6 col-xl-4">
+                <h2>Lorem ipsum blabla</h2>
+                <p>Bacon ipsum dolor amet pork belly porchetta ham kevin brisket sausage tail spare ribs sirloin,</p>
+                <p>We do not want drop caps here</p>
+                <div id="collapse-col-1" class="collapse">
+                    <div>
+                    chuck fatback bresaola salami. Meatloaf doner pork porchetta, hamburger tenderloin beef ribs 
+                    corned beef cupim. Leberkas sirloin andouille picanha prosciutto beef ribs pork chop filet mignon. 
+                    Drumstick short ribs turkey. capicola. Shoulder burgdoggen alcatra.
+                    </div>
+                </div>
+                <button class="btn read-more-btn" type="button" data-toggle="collapse" data-target="#collapse-col-1" aria-expanded="false" aria-controls="collapse-col-1">Read more</button>
+            </div>
+            <div class="col-general col-sm-12 col-md-6 col-xl-4">
+                <h2>Bacon ipsum is funny</h2>
+                <p>
+                    Jowl bacon short ribs, brisket kevin ball tip ham leberkas boudin pork belly pig hamburger
+                </p>
+                <div id="collapse-col-2" class="collapse">
+                    <div>
+                        venison. Burgdoggen picanha brisket bresaola strip steak
+                        shank sirloin tenderloin leberkas. Turducken pork shank ground round tongue burgdoggen pig tri-tip ham flank. Kevin frankfurter turkey ball tip 
+                        pork belly cow boudin short loin ground round turducken tongue ham brisket. Short loin filet mignon bresaola, jowl pancetta buffalo rump turducken
+                        shankle t-bone turkey tri-tip fatback cow. Strip steak short loin tri-tip beef, ham hock chuck kevin. Ham strip steak pork, ball tip sausage brisket
+                        sirloin pastrami t-bone tail corned beef bresaola.
+                    </div>
+                </div>
+                <button class="btn read-more-btn" type="button" data-toggle="collapse" data-target="#collapse-col-2" aria-expanded="false" aria-controls="collapse-col-2"><a>Read more</a></button>
+            </div>
+            <div class="col-general col-sm-12 col-md-6 col-xl-4">
+                <h2>Lorem ipsum blabla</h2>
+                <p>
+                    Bacon ipsum dolor amet pork belly porchetta ham kevin brisket sausage tail spare ribs sirloin, chuck fatback bresaola salami. 
+                    Meatloaf doner pork porchetta, hamburger chuck ribeye tri-tip tenderloin beef ribs corned beef cupim. Leberkas sirloin andouille 
+                    picanha prosciutto beef ribs pork chop filet mignon. Drumstick short ribs turkey, ribeye tri-tip meatloaf ground round filet mignon strip steak. 
+                    Bresaola frankfurter boudin kielbasa brisket porchetta chislic venison doner kevin pork belly fatback t-bone ham leberkas. Ball tip meatloaf 
+                    tenderloin kielbasa, tail capicola swine jerky beef salami turducken bacon chislic.
+                    <br>
+                    Buffalo beef andouille spare ribs fatback kevin. Flank leberkas venison, chislic alcatra tenderloin sirloin pig andouille biltong buffalo filet 
+                    mignon meatloaf ground round. Tri-tip burgdoggen alcatra pig leberkas ball tip corned beef chicken ham hock. Rump meatball bresaola sausage beef 
+                    tail short ribs chuck shank kielbasa pork belly ball tip ham hock t-bone buffalo. Venison rump pork belly, short loin landjaeger swine chislic 
+                    capicola. Shoulder burgdoggen alcatra, salami pork belly chislic chicken. 
+                    Buffalo beef andouille spare ribs fatback kevin. Flank leberkas venison, chislic alcatra tenderloin sirloin pig andouille biltong buffalo filet 
+                    mignon meatloaf ground round. Tri-tip burgdoggen alcatra pig leberkas ball tip corned beef chicken ham hock. Rump meatball bresaola sausage beef 
+                    tail short ribs chuck shank kielbasa pork belly ball tip ham hock t-bone buffalo. Venison rump pork belly, short loin landjaeger swine chislic 
+                    capicola. Shoulder burgdoggen alcatra, salami pork belly chislic chicken.
+                </p>
+                <button class="btn read-more-btn"><a>Read more</a></button>
+            </div>
+        </div>
+        <div class="row cookie-popup align-items-center justify-content-md-center">
+            <div>
+                This banner is really ugly. Whatever. Obligatory text: We use cookies in this website to give you the best user experience. 
+                <br>To learn more, read our <button><a id="privacy-link" target=link href="https://de.wikipedia.org/wiki/HTTP-Cookie">privacy policy.</a></button>                            
+            </div>
+            <div id="close-x">
+                <a target=link href="https://de.wikipedia.org/wiki/HTTP-Cookie">x</a>
+            </div>
+        </div>
+    </div>
+    <!--trying to include Bootstrap!'s JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
