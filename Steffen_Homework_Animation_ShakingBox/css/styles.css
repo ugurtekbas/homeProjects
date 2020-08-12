@@ -1,0 +1,23 @@
+
+div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: red;
+  margin: 20rem auto;
+}
+
+.wiggle {
+  animation: strobe;
+  transform-origin: bottom;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes strobe {
+  0% { transform: skew(4deg,0deg);  }
+  10% {transform: scaleY(.9); }
+  50% {transform: skew(-4deg,0deg); }
+  60% {transform: scaleY(.9); }
+  100% {transform: skew(4deg,0deg); }
+}

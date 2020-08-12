@@ -1,0 +1,110 @@
+@keyframes anim_ball {
+  0%   {left: 0;}
+  50%  {left: 500px; }
+  100% {left: 0;}
+  }
+
+.ball {
+  border-radius: 100%;
+  position: absolute;
+  animation-name: anim_ball;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.black_ball {
+  background-color: black;
+}
+
+.white_ball {
+  border: 2px solid black;
+  background-color: white;
+}
+
+.ball_1 {
+  height: 12rem;
+  width: 12rem;
+  z-index: 1;
+}
+
+.ball_2 {
+  height: 10rem;
+  width: 10rem;
+  margin-top: 1rem;
+  animation-delay: -0.5s;
+  z-index: 2;
+}
+
+.ball_3 {
+  height: 9rem;
+  width:  9rem;
+  margin-top: 1.5rem;
+  animation-delay: -1s;
+  z-index: 3;
+}
+
+.ball_4 {
+  height: 8rem;
+  width:  8rem;
+  margin-top: 2rem;
+  animation-delay: -1.5s;
+  z-index: 4;
+}
+
+.ball_5 {
+  height: 7rem;
+  width:  7rem;
+  margin-top: 2.5rem;
+  animation-delay: -2s;
+  z-index: 5;
+}
+
+.ball_6 {
+  height: 6rem;
+  width:  6rem;
+  margin-top: 3rem;
+  animation-delay: -2.5s;
+  z-index: 6;
+}
+
+.ball_7 {
+  height: 5rem;
+  width:  5rem;
+  margin-top: 3.5rem;
+  animation-delay: -3s;
+  z-index: 7;
+}
+
+.ball_8 {
+  height: 3rem;
+  width:  3rem;
+  margin-top: 4.5rem;
+  animation-delay: -3.5s;
+  z-index: 8;
+}
+
+.ball_9 {
+  height: 2rem;
+  width:  2rem;
+  margin-top: 5rem;
+  animation-delay: -4s;
+  z-index: 9;
+}
+
+.ball_10 {
+  height: 1rem;
+  width:  1rem;
+  margin-top: 5.5rem;
+  animation-delay: -4.25s;
+  z-index: 10;
+}
+
+.ball_11 {
+  height: 0.75rem;
+  width:  0.75rem;
+  margin-top: 5.75rem;
+  animation-delay: -4.75s;
+  z-index: 11;
+}
